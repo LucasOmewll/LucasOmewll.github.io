@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Livros</h1>
+    </header>
+    <hr>
+    <main>
+        <div id="form_div">
+            <fieldset>
+                <legend>Formulário</legend>
+                <form method="post">
+                    <label for="titulo">Título:</label><br>
+                    <input type="text" maxlength="100" name="titulo" id="titulo"><br><br>
+    
+                    <label for="autor">Autor:</label><br>
+                    <input type="text" maxlength="100" name="autor" id="autor"><br><br>
+    
+                    <label for="editora">Editora:</label><br>
+                    <input type="text" maxlength="100" name="editora" id="editora"><br><br>
+    
+                    <label for="genero">Gênero Literário:</label><br>
+                    <select name="genero" id="genero">
+                        <option>Romance</option>
+                        <option>Ficção Científica</option>
+                        <option>Fantasia</option>
+                        <option>Acadêmico</option>
+                        <option>Religião e Espiritualidade</option>
+                        <option>HQ</option>
+                        <option>Política</option>
+                    </select><br><br>
+    
+                    <label for="num_paginas">Número de Páginas:</label><br>
+                    <input type="number" min="1" step="1" name="num_paginas" id="num_paginas"><br><br>
+    
+                    <label for="edicao">Edição:</label><br>
+                    <input type="number" min="1" step="1" name="edicao" id="edicao"><br><br>
+
+                    <label for="data_lancamento">Data de Lançamento:</label><br>
+                    <input type="date" min="1" step="1" name="data_lancamento" id="data_lancamento"><br><br>
+    
+                    <fieldset>
+                        <legend>Formato:</legend>
+                        
+                        <input type="radio" name="formato_livro" value="brochura" id="brochura">
+                        <label for="brochura">Brochura</label><br>
+    
+                        <input type="radio" name="formato_livro" value="capa_dura" id="capa_dura">
+                        <label for="capa_dura">Capa dura</label><br>
+    
+                        <input type="radio" name="formato_livro" value="pocket" id="pocket">
+                        <label for="pocket">Pocket</label><br>
+    
+                        <input type="radio" name="formato_livro" value="quadrado" id="quadrado">
+                        <label for="quadrado">Quadrado</label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Disponível em:</legend>
+                        <input type="checkbox" name="check_pt" value="português" id="check_pt">
+                        <label for="check_pt">Português Brasileiro</label><br>
+    
+                        <input type="checkbox" name="check_es" value="espanhol" id="check_es">
+                        <label for="check_pt">Espanhol</label><br>
+    
+                        <input type="checkbox" name="check_es" value="espanhol" id="check_es">
+                        <label for="check_pt">Inglês</label><br>
+                    </fieldset>
+                    
+                    <input type="submit" name="btn_enviar" value="Enviar"><br>
+                    <input type="reset" name="btn_cancelar" value="Cancelar"><br>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <h4>Não há nada para ver aqui...</h4>
+        <br>
+        <br>
+    </footer>
+</body>
+</html>
